@@ -1,20 +1,18 @@
 import './App.css';
 import Header from './components/Header';
+import styled from 'styled-components'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Header />    
-        <Switch>
-          <Route path="/search">
-            {/* {SearchPage} */}
-          </Route>
-          </Switch>    
-      </Router>
-    </div>
+    <Test className="App">
+      Test
+    </Test>
   );
 }
 
 export default App;
+
+const Test = styled.div`
+  text-align: center;
+`
