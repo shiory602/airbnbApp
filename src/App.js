@@ -1,13 +1,29 @@
-import './App.css';
-import Header from './components/Header';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components'
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import './App.css';
+
+import Header from './components/Header';
+import Top from './components/Top/Top';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Test className="App">
-      Test
-    </Test>
+    <BrowserRouter class='App'>
+      <Header />
+      <Switch>
+        <Route exact path='/'>
+          <Top />
+        </Route>
+        <Route path='/detail'>
+          <p>Detail</p>
+        </Route>
+        <Route path='/checkout'>
+          <p>Checkout</p>
+        </Route>
+      </Switch>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
