@@ -5,15 +5,15 @@ import styled from 'styled-components';
 function Footer() {
     return (
         <Background>
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-4">
+            <div className="container">
+                <div className="row justify-content-between">
+                    <div className="col-4">
                     © 2021 Airbnb, Inc.
                     Privacy
                     Terms
                     Sitemap
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                         <RiGlobalLine />English (CA)
                         $ CAD
                         <Icon><ImFacebook /></Icon>

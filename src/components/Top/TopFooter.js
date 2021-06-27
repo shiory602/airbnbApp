@@ -3,10 +3,10 @@ import styled from 'styled-components';
 function TopFooter() {
     return (
         <>
-        <Background class="container">
-            <div class="row card-footer text-muted p-5">
-                <div class="col">
-                    <h5 class="card-title">ABOUT</h5>
+        <Background className="container">
+            <div className="row card-footer text-muted p-5">
+                <div className="col">
+                    <h5 className="card-title">ABOUT</h5>
                     <ul>
                         <li>How Airbnb works</li>
                         <li>Newsroom</li>
@@ -15,15 +15,15 @@ function TopFooter() {
                         <li>Founders' Letter</li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h5 class="card-title">COMMUNITY</h5>
+                <div className="col">
+                    <h5 className="card-title">COMMUNITY</h5>
                     <ul>
                         <li>Accessibility</li>
                         <li>Guest Referrals</li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h5 class="card-title">HOST</h5>
+                <div className="col">
+                    <h5 className="card-title">HOST</h5>
                     <ul>
                         <li>Host your home</li>
                         <li>Host an Experience</li>
@@ -31,8 +31,8 @@ function TopFooter() {
                         <li>Refer Hosts</li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h5 class="card-title">SUPPORT</h5>
+                <div className="col">
+                    <h5 className="card-title">SUPPORT</h5>
                     <ul>
                         <li>Our COVID-19 Response</li>
                         <li>Cancellation options</li>
