@@ -15,8 +15,9 @@ We arranged UI design during developing so first image is a little bit different
 
 Since I practice to use Javascript, this is the main language I use.
 
-# Upcoming Features
-coming soon..
+# Author
+[Carlos Tutiya](https://github.com/ctutiya)
+[Shiori Suzuki](https://github.com/shiory602)
 
 # References
 [Housing Anywhere](https://developers.housinganywhere.com/#section/Getting-Started-guide)
