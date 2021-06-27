@@ -13,13 +13,20 @@ We arranged UI design during developing so first image is a little bit different
 # Languages
 - React
 
-Since I practice to use Javascript, this is the main language I use.
-
 # Author
-[Carlos Tutiya](https://github.com/ctutiya)
+[Danny](https://github.com/Dannyboy222) <br />
 [Shiori Suzuki](https://github.com/shiory602)
 
+# Roles
+## Danny Lee:
+- Log In system
+- Search bar
+- Header
+
+## Shiori Suzuki:
+- Footer
+- Top page
+- context API
+
 # References
-[Housing Anywhere](https://developers.housinganywhere.com/#section/Getting-Started-guide)
-[SYMPLICITY](https://www.symplicity.com/developer/residence/faq)
-[HONEST RENTER.com](https://www.honestrenter.com/api/docs/)
+[rapid API](https://rapidapi.com/apidojo/api/hotels4/)
