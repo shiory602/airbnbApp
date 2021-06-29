@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Top from './components/Top/Top';
+import Detail from './components/Detail/Detail';
 import Footer from './components/Footer';
 import HotelProvider from './context/HotelContext';
 
@@ -13,13 +14,13 @@ function App() {
       <BrowserRouter class='App'>
         <Header />
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/' component={Top}>
             <Top />
           </Route>
-          <Route path='/detail'>
+          <Route path='/Detail' component={Detail}>
             <p>Detail</p>
           </Route>
-          <Route path='/checkout'>
+          <Route path='/Checkout'>
             <p>Checkout</p>
           </Route>
         </Switch>
