@@ -3,7 +3,7 @@ import styled from 'styled-components';
 function TopFooter() {
     return (
         <>
-        <Background className="container">
+        <Background className="container　m-0">
             <div className="row card-footer text-muted p-5">
                 <div className="col">
                     <h5 className="card-title">ABOUT</h5>
