@@ -17,15 +17,9 @@ function App() {
       <BrowserRouter class='App'>
         <Header />
         <Switch>
-          <Route exact path='/' component={Top}>
-            <Top />
-          </Route>
-          <Route path='/Detail' component={Detail}>
-            <p>Detail</p>
-          </Route>
-          <Route path='/Checkout'>
-            <p>Checkout</p>
-          </Route>
+          <Route exact path='/' component={Top} />
+          <Route path='/Detail' component={Detail} />
+          <Route path='/Checkout' />
         </Switch>
         <Footer />
       </BrowserRouter>
