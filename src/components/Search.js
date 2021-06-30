@@ -9,7 +9,7 @@ import { useHistory } from "react-router-dom";
 
 
 
-export function Search() {
+export default function Search() {
 
     const history = useHistory();
     const [ startDate, setStartDate ] = useState(new Date());
@@ -20,18 +20,59 @@ export function Search() {
         key: "selection",
     };
 
-    function handleSelect(ranges) {
+    const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
         setEndDate(ranges.selection.endDate);
-    }
+    };
 
     return (
-        <div className="search">
-            <DateRangePicker range={[selectionRage]} onClick={handleSelect} />
-            <h2>Number of guests <PeopleIcon/></h2>
-            <input min={0} defaultValue={2} type="number" />
-            <Button onClick={() => history.push('./search')}>Search Airbnb</Button>
-        </div>
+        <Body>
+            <DateRangePicker ranges={[selectionRage]} onClick={handleSelect} />
+            <H2>Number of guests <PeopleIcon/></H2>
+            <Input min={0} defaultValue={2} type="number" />
+            <Submit><Button onClick={() => history.push('./search')}>Search Airbnb</Button></Submit>
+        </Body>
 
     );
 }
+
+const Body = styled.div`
+    position: absolute;
+    top: 183px;
+    left: 25%;
+    width: 100vw;
+`
+
+const H2 = styled.h2`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 558px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 335px;
+`
+
+const Input = styled.input`
+    width: 558px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 390px;
+    border: none;
+        &:focus {
+            outline-width: 0;
+        }
+`
+const Submit = styled.button`
+        position: absolute;
+        left: 0;
+        top: 430px;
+        text-transform: ingerit;
+        background-color: #ff7779;
+        color: white;
+        width: 560px;
+`
