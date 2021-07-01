@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 import LanguageIcon from '@material-ui/icons/Language';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import { Avatar , IconButton } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
+import Signin from './SignIn';
+
 
 
 export default function Header() {
@@ -26,7 +28,7 @@ export default function Header() {
         <IconButton>
         <ExpandMore />
         </IconButton>
-        <Avatar />
+        <Signin />
         </Right> 
         </Navbar>
     );

@@ -7,12 +7,12 @@ export default function SearchPage() {
         <div className="searchPage">
             <InfoBox>
                 <Info>62 stays. 26 August to 30 August .2 guests</Info>
-                <Info2>Stays nearby</Info2>
-                <Filters><Button variant="outlined">Cancellation Flexibility</Button></Filters>
-                <Filters><Button variant="outlined">Type of place</Button></Filters>
-                <Filters><Button variant="outlined">Price</Button></Filters>
-                <Filters><Button variant="outlined">Rooms and beds</Button></Filters>
-                <Filters><Button variant="outlined">More filters</Button></Filters>
+                <Info2>Explore nearby</Info2>
+                <Button variant="outlined">Cancellation Flexibility</Button>
+                <Button variant="outlined">Type of place</Button>
+                <Button variant="outlined">Price</Button>
+                <Button variant="outlined">Rooms and beds</Button>
+                <Button variant="outlined">More filters</Button>
             </InfoBox>
 
         </div>
@@ -33,8 +33,3 @@ const Info2 = styled.h1`
     margin-bottom: 30px;
 `
 
-const Filters = styled.button`
-    border-radius: 30px;
-    text-transform: inherit;
-    margin: 5px;
-`

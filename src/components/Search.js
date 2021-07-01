@@ -39,7 +39,7 @@ export default function Search() {
 const Body = styled.div`
     position: absolute;
     top: 183px;
-    left: 25%;
+    left: 31%;
     width: 100vw;
 `
 
