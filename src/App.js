@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Top from './components/Top/Top';
 import Footer from './components/Footer';
 import HotelProvider from './context/HotelContext';
+import SearchPage from './components/SearchPage';
+
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
       <BrowserRouter class='App'>
         <Header />
         <Switch>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
           <Route exact path='/'>
             <Top />
           </Route>
