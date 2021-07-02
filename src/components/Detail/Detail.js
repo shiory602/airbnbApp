@@ -38,8 +38,8 @@ const Detail = () => {
                     <img src={nearby} alt="house" />
                 </div>
                 <div className="col">
-                    <img src={experience} className="d-flex flex-row justify-content-around flex-wrap m-3" width="230px" alt="home" />
-                    <img src={experience} className="d-flex flex-row justify-content-around flex-wrap m-3" width="230px" alt="home" />
+                    <img src={experience} className="d-flex flex-row justify-content-around flex-wrap mb-3" width="230px" alt="home" />
+                    <img src={experience} className="d-flex flex-row justify-content-around flex-wrap mt-3" width="230px" alt="home" />
                 </div>
             </div>
             <div className="row">
@@ -80,7 +80,7 @@ const Detail = () => {
                     {/* calender */}
                 </div>
                 <div className="col">
-                    menu
+                    
                 </div>
             </div>
             <div className="row">
