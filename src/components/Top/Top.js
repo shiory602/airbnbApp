@@ -7,6 +7,7 @@ import topImage from "./top-image.jpg";
 import experience from "./experience.jpg";
 import nearby from "./nearby.jpg";
 import hosting from "./hosting.jpg";
+import Banner from '../Banner';
 
 function Top() {
     // const { photos } = useHotelContext();
@@ -15,6 +16,7 @@ function Top() {
         // <>
         // { photos.length !== 0 && (
         <>
+            <Banner />
             <img src={topImage} width="100%" alt="top" />
             {/* <img src={photos.hotelImage[0].baseUrl} alt='top image' /> */}
             <Explore />
