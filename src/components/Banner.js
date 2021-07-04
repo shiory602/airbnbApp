@@ -10,16 +10,16 @@ export default function Banner() {
 
     return (
         <Body>
-            <Banner_Search>
+            <BannerSearch>
             {showSearch && <Search />}
             <Button onClick={() => setShowSearch(!showSearch)} className="benner_search_button" variant="outlined">
                 {showSearch ? "Hide" : "Search Dates"}
             </Button>
-            </Banner_Search>
-            <Banner_info>
+            </BannerSearch>
+            <Bannerinfo>
 
                 <Button onClick={() => history.push('/search')} variant='outlined'>Explore Nearby</Button>
-            </Banner_info>
+            </Bannerinfo>
         </Body>
     );
 }
@@ -31,11 +31,11 @@ const Body = styled.div`
     justify-content: center;
 `
 
-const Banner_Search = styled.div`
+const BannerSearch = styled.div`
     flex-direction: column;
     margin: 10px;
 `
-const Banner_info = styled.div`
+const Bannerinfo = styled.div`
     flex-direction: column;
     margin: 10px;
 `

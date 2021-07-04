@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 import LanguageIcon from '@material-ui/icons/Language';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import { Avatar, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import Signin from './SignIn';
 
 
@@ -56,6 +56,7 @@ const Center = styled.div`
     flex: 1;
     align-items: center;
     max-width: fit-content;
+    margin-left: 180px;
     padding: 10px;
     height: 50px;
     border: 1px solid lightgray;
@@ -76,6 +77,6 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 5vw;
+    width: 15vw;
     margin-right: 100px;
 `

@@ -15,9 +15,10 @@ export default function SignIn() {
         <div>
         <button 
         style={{
-            backgroundColor: 'lightGrey',
+            width: '200px',
+            backgroundColor: '#FF5A5F',
             borderRadius: '15px',
-            color:'black'}}
+            color:'white'}}
         onClick={() => handleOnClick(googleProvider)}>Log in with Google</button>
         </div>
     );
