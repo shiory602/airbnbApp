@@ -14,7 +14,7 @@ We arranged UI design during developing so first image is a little bit different
 - React
 
 # Author
-[Danny](https://github.com/Dannyboy222) <br />
+[Danny Lee](https://github.com/Dannyboy222) <br />
 [Shiori Suzuki](https://github.com/shiory602)
 
 # Roles
@@ -22,11 +22,13 @@ We arranged UI design during developing so first image is a little bit different
 - Log In system
 - Search bar
 - Header
+- Checkout page
 
 ## Shiori Suzuki:
 - Footer
 - Top page
-- context API
+- Context API
+- Detail page
 
 # References
 [rapid API](https://rapidapi.com/apidojo/api/hotels4/)
