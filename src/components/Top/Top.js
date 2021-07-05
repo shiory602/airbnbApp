@@ -24,22 +24,28 @@ function Top() {
             <h2 className="m-3">Nearby</h2>
             <div className="card-group">
                 <div className="card">
-                    <img src={nearby} className="card-img-top" alt="nearby" />
-                    <div className="card-body">
-                    <h5 className="card-title">Outdoor getaways</h5>
-                    </div>
+                    <Link to="/search">
+                        <img src={nearby} className="card-img-top" alt="nearby" />
+                        <div className="card-body">
+                        <h5 className="card-title">Outdoor getaways</h5>
+                        </div>
+                    </Link>
                 </div>
                 <div className="card">
-                    <img src={nearby} className="card-img-top" alt="nearby" />
-                    <div className="card-body">
-                    <h5 className="card-title">Outdoor getaways</h5>
-                    </div>
+                    <Link to="/search">
+                        <img src={nearby} className="card-img-top" alt="nearby" />
+                        <div className="card-body">
+                        <h5 className="card-title">Outdoor getaways</h5>
+                        </div>
+                    </Link>
                 </div>
                 <div className="card">
-                    <img src={nearby} className="card-img-top" alt="nearby" />
-                    <div className="card-body">
-                    <h5 className="card-title">Outdoor getaways</h5>
-                    </div>
+                    <Link to="/search">
+                        <img src={nearby} className="card-img-top" alt="nearby" />
+                        <div className="card-body">
+                        <h5 className="card-title">Outdoor getaways</h5>
+                        </div>
+                    </Link>
                 </div>
             </div>
 
@@ -58,25 +64,31 @@ function Top() {
             <h2 className="m-3">Experience</h2>
             <div className="card-group">
                 <div className="card">
-                    <img src={experience} className="card-img-top" alt="experience" />
-                    <div className="card-body">
-                    <h5 className="card-title">Outdoor getaways</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                    <Link to="search">
+                        <img src={experience} className="card-img-top" alt="experience" />
+                        <div className="card-body">
+                        <h5 className="card-title">Outdoor getaways</h5>
+                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </Link>
                 </div>
                 <div className="card">
-                    <img src={experience} className="card-img-top" alt="experience" />
-                    <div className="card-body">
-                    <h5 className="card-title">Outdoor getaways</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                    <Link to="search">
+                        <img src={experience} className="card-img-top" alt="experience" />
+                        <div className="card-body">
+                        <h5 className="card-title">Outdoor getaways</h5>
+                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </Link>
                 </div>
                 <div className="card">
-                    <img src={experience} className="card-img-top" alt="experience" />
-                    <div className="card-body">
-                    <h5 className="card-title">Outdoor getaways</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                    <Link to="search">
+                        <img src={experience} className="card-img-top" alt="experience" />
+                        <div className="card-body">
+                        <h5 className="card-title">Outdoor getaways</h5>
+                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
 

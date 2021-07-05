@@ -1,4 +1,3 @@
-import { span } from "react-router-dom";
 import styled from "styled-components";
 import DetailFooter from "./DetailFooter";
 
