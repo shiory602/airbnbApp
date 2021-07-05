@@ -9,6 +9,7 @@ import Top from './components/Top/Top';
 import Detail from './components/Detail/Detail';
 import Footer from './components/Footer';
 import HotelProvider from './context/HotelContext';
+import SearchPage from './components/SearchPage';
 
 function App() {
   return (
@@ -16,9 +17,18 @@ function App() {
       <BrowserRouter class='App'>
         <Header />
         <Switch>
-          <Route exact path='/' component={Top} />
-          <Route path='/Detail' component={Detail} />
-          <Route path='/Checkout' />
+          <Route path="/search">
+            <SearchPage />
+          </Route>
+          <Route exact path='/'>
+            <Top />
+          </Route>
+          <Route path='/detail'>
+            <p>Detail</p>
+          </Route>
+          <Route path='/checkout'>
+            <p>Checkout</p>
+          </Route>
         </Switch>
         <Footer />
       </BrowserRouter>
