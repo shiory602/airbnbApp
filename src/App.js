@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import HotelProvider from './context/HotelContext';
 import SearchPage from './components/SearchPage';
 
-
 function App() {
   return (
     <HotelProvider>
