@@ -23,8 +23,8 @@ function App() {
           <Route exact path='/'>
             <Top />
           </Route>
-          <Route path='/detail'>
-            <p>Detail</p>
+          <Route path='/Detail'>
+            <Detail />
           </Route>
           <Route path='/checkout'>
             <p>Checkout</p>
