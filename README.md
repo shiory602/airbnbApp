@@ -22,13 +22,13 @@ We arranged UI design during developing so first image is a little bit different
 - Log In system
 - Search bar
 - Header
-- Checkout page
 
 ## Shiori Suzuki:
 - Footer
 - Top page
 - Context API
 - Detail page
+- Checkout page
 
 # References
 [rapid API](https://rapidapi.com/apidojo/api/hotels4/)
