@@ -1,31 +1,35 @@
 import React, { useState, useEffect, useContext } from 'react';
+// import loadingImg from './img/Spinner-1s-200px.gif';
 
 const HotelContext = React.createContext();
 
 const HotelProvider = ({ children }) => {
-    const [photos, setPhotos] = useState([]);
+    const [list, setList] = useState([]);
+    // const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        fetch("https://hotels4.p.rapidapi.com/properties/get-hotel-photos?id=1178275040", {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-key": "725fcffeeamsheb092e027d45b9ep10af3fjsn6de332681721",
-                "x-rapidapi-host": "hotels4.p.rapidapi.com"
-            }
+        // setLoading(true)
+
+        fetch("https://hotels4.p.rapidapi.com/properties/list?adults1=1&pageNumber=1&destinationId=1506246&pageSize=25&checkOut=2020-01-15&checkIn=2020-01-08&sortOrder=PRICE&locale=en_US&currency=USD", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "c1fed9a4acmsh578a26f2c7d936ep165c4ajsn51ea6d3f3fd3",
+            "x-rapidapi-host": "hotels4.p.rapidapi.com"
+        }
+    })
+    .then(response => {
+        response.json().then(data => {
+            setList(data.data.body.searchResults.results[0])
+            // setLoading(false)
         })
-        .then(response => {
-            response.json().then(data => {
-                setPhotos(data);
-                // console.log(photos);
-            })
-        })
-        .catch(err => {
-            console.error(err);
-        });
+    })
+    .catch(err => {
+        console.error(err);
+    });
     }, [])
 
     return (
-        <HotelContext.Provider value={{photos}}>
+        <HotelContext.Provider value={{list}}>
             {children}
         </HotelContext.Provider>
     );
