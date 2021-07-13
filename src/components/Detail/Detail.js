@@ -1,5 +1,7 @@
 import styled from "styled-components";
+import Subdetail from "./Subdetail"
 import DetailFooter from "./DetailFooter";
+import { useHotelContext } from '../../context/HotelContext';
 
 import { BiDoorOpen, BiBed } from "react-icons/bi";
 import { BsHouseDoor } from "react-icons/bs";
@@ -11,37 +13,30 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdVerifiedUser } from "react-icons/md";
 import { RiParkingBoxLine, RiChargingPile2Line } from "react-icons/ri";
 
-import experience from "../Top/experience.jpg";
-import nearby from "../Top/nearby.jpg";
-
 const Detail = () => {
-    return (
+    const { list } = useHotelContext();
+    const rate = list.length !== 0 && list.ratePlan.price.current
+    return  list.length !== 0 && (
         <div className="container">
             <div className="row">
-                <h2>Private Guest Suite- 10mins to YVR</h2>
+                <h2>{list.name}</h2>
             </div>
             <div className="row">
-                <p>
-                    <span><ImStarFull/></span>4.50
-                    (64 reviews)
+                <p className="h5">
+                    <span><ImStarFull/></span>{list.guestReviews.rating}
+                    ({list.guestReviews.total} reviews)
                     ·
-                    Richmond, British Columbia, Canada
+                    {list.address.locality}, {list.address.countryName}
                     <FiShare /> Share
                     <FiHeart /> Save
                 </p>
             </div>
-            <div className="row">
-                <div className="col">
-                    <img src={nearby} alt="house" />
-                </div>
-                <div className="col">
-                    <img src={experience} className="d-flex flex-row justify-content-around flex-wrap mb-3" width="230px" alt="home" />
-                    <img src={experience} className="d-flex flex-row justify-content-around flex-wrap mt-3" width="230px" alt="home" />
-                </div>
+            <div className="row m-4">
+                    <img src={list.optimizedThumbUrls.srpDesktop} width="500px" alt="house" />
             </div>
             <div className="row">
                 <div className="col">
-                    <h2>Title -  Host name</h2>
+                    <h2>{list.name}</h2>
                     <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>
                     <hr />
                     <h4><BsHouseDoor/>Entire home</h4>
@@ -77,7 +72,7 @@ const Detail = () => {
                     {/* calender */}
                 </div>
                 <div className="col">
-                    
+                    <Subdetail rate={rate} />
                 </div>
             </div>
             <div className="row">

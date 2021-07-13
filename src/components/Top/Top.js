@@ -1,7 +1,6 @@
 import Explore from './Explore';
 import TopFooter from './TopFooter';
 import { Link } from 'react-router-dom';
-// import { useHotelContext } from '../../context/HotelContext';
 
 import topImage from "./top-image.jpg";
 import experience from "./experience.jpg";
@@ -10,21 +9,16 @@ import hosting from "./hosting.jpg";
 import Banner from '../Banner';
 
 function Top() {
-    // const { photos } = useHotelContext();
-    // console.log(photos.hotelImages);
     return (
-        // <>
-        // { photos.length !== 0 && (
         <>
             <Banner />
             <img src={topImage} width="100%" alt="top" />
-            {/* <img src={photos.hotelImage[0].baseUrl} alt='top image' /> */}
             <Explore />
 
             <h2 className="m-3">Nearby</h2>
             <div className="card-group">
                 <div className="card">
-                    <Link to="/search">
+                    <Link to="/search" className="link-secondary">
                         <img src={nearby} className="card-img-top" alt="nearby" />
                         <div className="card-body">
                         <h5 className="card-title">Outdoor getaways</h5>
@@ -32,7 +26,7 @@ function Top() {
                     </Link>
                 </div>
                 <div className="card">
-                    <Link to="/search">
+                    <Link to="/search" className="link-secondary">
                         <img src={nearby} className="card-img-top" alt="nearby" />
                         <div className="card-body">
                         <h5 className="card-title">Outdoor getaways</h5>
@@ -40,7 +34,7 @@ function Top() {
                     </Link>
                 </div>
                 <div className="card">
-                    <Link to="/search">
+                    <Link to="/search" className="link-secondary">
                         <img src={nearby} className="card-img-top" alt="nearby" />
                         <div className="card-body">
                         <h5 className="card-title">Outdoor getaways</h5>
@@ -64,7 +58,7 @@ function Top() {
             <h2 className="m-3">Experience</h2>
             <div className="card-group">
                 <div className="card">
-                    <Link to="search">
+                    <Link to="search" className="link-secondary">
                         <img src={experience} className="card-img-top" alt="experience" />
                         <div className="card-body">
                         <h5 className="card-title">Outdoor getaways</h5>
@@ -73,7 +67,7 @@ function Top() {
                     </Link>
                 </div>
                 <div className="card">
-                    <Link to="search">
+                    <Link to="search" className="link-secondary">
                         <img src={experience} className="card-img-top" alt="experience" />
                         <div className="card-body">
                         <h5 className="card-title">Outdoor getaways</h5>
@@ -82,7 +76,7 @@ function Top() {
                     </Link>
                 </div>
                 <div className="card">
-                    <Link to="search">
+                    <Link to="search" className="link-secondary">
                         <img src={experience} className="card-img-top" alt="experience" />
                         <div className="card-body">
                         <h5 className="card-title">Outdoor getaways</h5>
@@ -91,12 +85,8 @@ function Top() {
                     </Link>
                 </div>
             </div>
-
-            
             <TopFooter />
         </>
-        // )}
-        // </>
     )
 }
 
